@@ -35,3 +35,18 @@ def main():
 #Run main program
 if __name__ == "__main__" :
     main()         
+
+
+#Output :
+#-------------------------------------------------------------------
+#Please enter your age :12
+#Enter your citizenship status(citizen/non-citizen) : citizen
+#You are not eligible to vote
+#You are not eligible to drive.
+
+#Please enter your age :45
+#Enter your citizenship status(citizen/non-citizen) : citizen
+#You are not eligible to vote
+#You are not eligible to drive.
+
+#--------------------------------------------------------------------------

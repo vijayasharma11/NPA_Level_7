@@ -16,3 +16,14 @@ student_scores = [70, 45, 85, 30, 65]
 for score in student_scores:
     # Ternary operator to check if the score is a passing grade or not
     print(f"Score: {score} - {'Pass' if score >= 60 else 'Fail'}")
+
+
+#Output
+#-----------------------------------------------------
+#Score: 70 - Pass
+#Score: 45 - Fail
+#Score: 85 - Pass
+#Score: 30 - Fail
+#Score: 65 - Pass
+
+#-----------------------------------------------------------
