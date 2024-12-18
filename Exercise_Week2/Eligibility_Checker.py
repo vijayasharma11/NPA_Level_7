@@ -1,3 +1,16 @@
+# Header Section
+# ---------------------------------------------------
+# Name: Vijaya Sharma
+# Date: 18/12/2024
+# Purpose: creating a program to check whether a person is eligible to vote and drive
+#  based on their age and citizenship. The eligibility criteria are as follows:#
+#To vote, a person must be at least 18 years old and a citizen.
+#To drive, a person must be at least 16 years old and a citizen.
+#Prompt the user to enter their age and citizenship status (as "citizen" or "non-citizen").
+#Check if the person is eligible to vote and drive based on the provided age and citizenship status.
+#Print appropriate messages indicating whether the person is eligible to vote and drive or not.
+# ---------------------------------------------------
+
 #Function to check the Eligibility Checker
 def checker_eligibility(age,citizenship):
    # Check if the user is eligible to vote
