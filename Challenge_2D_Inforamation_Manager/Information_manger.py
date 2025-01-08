@@ -76,14 +76,16 @@ def update_student():
         print(f"Student {update_name} not found.\n")
 
 #Deleting Student Information
+# Function to delete a student's information
 def delete_student():
-    delete_name = ("Please Enter the name of the student to delete: ")
+    delete_name = input("Enter the name of the student to delete: ")
     found = False
-
+    
     for i, student in enumerate(students):
+        name, age, grade = student
         if name.lower() == delete_name.lower():
             del students[i]
-            print(f"Student {name}'s has been deleted successfully.\n")
+            print(f"Student {name} has been deleted successfully.\n")
             found = True
             break
     
@@ -123,3 +125,6 @@ def main():
 # Run the program
 if __name__ == "__main__":
     main()
+
+
+
