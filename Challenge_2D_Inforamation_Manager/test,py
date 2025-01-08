@@ -1,0 +1,107 @@
+# List to store student information as tuples
+students = []
+
+# Function to add a new student
+def add_student():
+    name = input("Enter the student's name: ")
+    age = int(input("Enter the student's age: "))
+    grade = input("Enter the student's grade: ")
+    
+    student = (name, age, grade)
+    students.append(student)
+    print(f"Student {name} has been added successfully.\n")
+
+# Function to display all students
+def display_students():
+    if len(students) == 0:
+        print("No students available.\n")
+    else:
+        print("List of all students:")
+        for index, student in enumerate(students, start=1):
+            name, age, grade = student
+            print(f"{index}. Name: {name}, Age: {age}, Grade: {grade}")
+        print()  # Adding a newline for better readability
+
+# Function to search for a student by name
+def search_student():
+    search_name = input("Enter the name of the student to search: ")
+    found = False
+    
+    for student in students:
+        name, age, grade = student
+        if name.lower() == search_name.lower():
+            print(f"Student found: Name: {name}, Age: {age}, Grade: {grade}\n")
+            found = True
+            break
+    
+    if not found:
+        print(f"Student {search_name} not found.\n")
+
+# Function to update student's information
+def update_student():
+    update_name = input("Enter the name of the student to update: ")
+    found = False
+    
+    for i, student in enumerate(students):
+        name, age, grade = student
+        if name.lower() == update_name.lower():
+            new_age = int(input(f"Enter the new age for {name}: "))
+            new_grade = input(f"Enter the new grade for {name}: ")
+            
+            # Update the student's information
+            students[i] = (name, new_age, new_grade)
+            print(f"Student {name}'s information has been updated successfully.\n")
+            found = True
+            break
+    
+    if not found:
+        print(f"Student {update_name} not found.\n")
+
+# Function to delete a student's information
+def delete_student():
+    delete_name = input("Enter the name of the student to delete: ")
+    found = False
+    
+    for i, student in enumerate(students):
+        name, age, grade = student
+        if name.lower() == delete_name.lower():
+            del students[i]
+            print(f"Student {name} has been deleted successfully.\n")
+            found = True
+            break
+    
+    if not found:
+        print(f"Student {delete_name} not found.\n")
+
+# Main function to handle the user menu
+def main():
+    while True:
+        print("Choose an option:")
+        print("1. Add a new student")
+        print("2. Display all students")
+        print("3. Search for a student")
+        print("4. Update a student's information")
+        print("5. Delete a student's information")
+        print("6. Exit")
+        
+        choice = input("Enter your choice (1-6): ")
+
+        if choice == '1':
+            add_student()
+        elif choice == '2':
+            display_students()
+        elif choice == '3':
+            search_student()
+        elif choice == '4':
+            update_student()
+        elif choice == '5':
+            delete_student()
+        elif choice == '6':
+            print("Exiting the program. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.\n")
+
+# Run the program
+if __name__ == "__main__":
+    main()
