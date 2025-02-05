@@ -1,11 +1,32 @@
-# Get two numbers from the user
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+class Animal:
+    def speak(self):
+        return "Some sound"
 
-# Add the two numbers
-total = num1 + num2
-total = num1 * num2
-total = num1 / num2
+class Dog(Animal):
+    def speak(self):
+        return "Woof"
 
-# Display the result
-print("The total of", num1, "and", num2, "is", total)
+class Cat:
+    def speak(self):
+        return "Meow"
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    print(animal.speak())  # Output: Woof (from Dog), Meow (from Cat)
+
+
+x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
+print(x == y)  # True (values are the same)
+print(x is y)  # False (they are different objects in memory)
+print(z is x)
+
+s = "Hell World!"
+modified_s = s[:4] + "," + s[4:]
+print(modified_s)
+
+
+s = "apple,banana,orange"
+print(s.split(","))  
