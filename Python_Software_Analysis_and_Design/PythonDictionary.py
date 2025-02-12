@@ -1,3 +1,12 @@
+# Header Section
+# ---------------------------------------------------
+# Name: Vijaya Sharma
+# Date: 12/02/2025
+# Purpose:a python program that will ask a user to enter a name and a score it will add this information to a dictionary, 
+# you will then repeat this two more times so your dictionary should contain a total of three names and three scores, 
+# it will then print this list. 
+#-----------------------------------------------------------------
+
 # Create an empty dictionary to store names and scores
 scores = {}
 

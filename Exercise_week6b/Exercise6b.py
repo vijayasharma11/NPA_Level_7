@@ -70,3 +70,54 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+'''
+Welcome to the Inventory Management System!
+
+1. Add a new product
+2. Update product quantity
+3. Display current inventory
+4. Exit
+
+Enter your choice: 1
+Enter product name: Apple
+Enter product category: Fruits
+Enter product quantity: 45
+Product added successfully!
+
+Welcome to the Inventory Management System!
+
+1. Add a new product
+2. Update product quantity
+3. Display current inventory
+4. Exit
+
+Enter your choice: 2
+Enter product name: Apple
+Enter new quantity: 56
+Quantity updated successfully!
+
+Welcome to the Inventory Management System!
+
+1. Add a new product
+2. Update product quantity
+3. Display current inventory
+4. Exit
+
+Enter your choice: 3
+
+Current Inventory:
+- Apple (Fruits): 56
+
+Welcome to the Inventory Management System!
+
+1. Add a new product
+2. Update product quantity
+3. Display current inventory
+4. Exit
+
+Enter your choice: 4
+Inventory saved. Exiting...
+
+'''

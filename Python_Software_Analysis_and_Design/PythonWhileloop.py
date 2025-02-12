@@ -1,3 +1,13 @@
+# Header Section
+# ---------------------------------------------------
+# Name: Vijaya Sharma
+# Date: 12/02/2025
+# Purpose:python program that will ask a user if they want to enter grades, 
+# if the user types Yes it will ask for the name and grade, 
+# it will ask if they want to add another grade and it will keep allowing them 
+# to add grades until they reply No.
+#-----------------------------------------------------------------
+
 # Create an empty dictionary to store names and scores
 scores = {}
 

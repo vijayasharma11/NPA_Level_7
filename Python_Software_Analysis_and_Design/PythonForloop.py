@@ -1,3 +1,14 @@
+# Header Section
+# ---------------------------------------------------
+# Name: Vijaya Sharma
+# Date: 12/02/2025
+# Purpose:program you created for the dictionary task you will develop a python program 
+# that will ask a user how many grades they are going to enter, 
+# then loops through the process of collecting the names and grades 
+# that amount of times storing them in a dictionary it will then print this dictionary. 
+#-----------------------------------------------------------------
+
+
 # Create an empty dictionary to store names and scores
 scores = {}
 
