@@ -2,6 +2,11 @@
     {
         "name": "Apple",
         "category": "Fruits",
-        "quantity": 56
+        "quantity": 89
+    },
+    {
+        "name": "Apple",
+        "category": "fruits",
+        "quantity": 78
     }
 ]

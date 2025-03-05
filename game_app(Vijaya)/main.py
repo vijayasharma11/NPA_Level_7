@@ -7,19 +7,8 @@
 # managing multiple games and tracking player performance.
 #-----------------------------------------------------------------
 import csv  # Import CSV module to handle score storage
-import pygame
-print(pygame.__version__)
-import sys
 import games.game1 as game1  # Import Game 1 module
 import games.game2 as game2  # Import Game 2 module
-import games.tic_tac_toe as tic_tac_toe  # Import Tic-Tac-Toe game module
-import games.snake_game as snake_game
-import games.word_square as word_square  # Import WordSquare game module
-from scoreboard_manager import create_scoreboard, update_scoreboard, display_leaderboard
-
-
- 
-
 from utils import display_high_scores, export_scores  # Import utility functions
 
 # File name where scores are stored
@@ -38,12 +27,9 @@ def main_menu():
         print("\nWelcome to Glasgow Code Learning Game App!")
         print("1. Play Game 1")
         print("2. Play Game 2")
-        print("3. Play Tic-Tac-Toe")  # Add Tic-Tac-Toe option
-        print("4. Snake game")  # Add Tic-Tac-Toe option
-        print("5. Word Square")  # Add WordSquare option
-        print("6. View High Scores")
-        print("7. Export Scores to CSV")
-        print("8. Exit")
+        print("3. View High Scores")
+        print("4. Export Scores to CSV")
+        print("5. Exit")
 
         # Get user's menu choice
         choice = input("Enter your choice: ")
@@ -60,26 +46,16 @@ def main_menu():
             score = game2.play()
             save_score(name, score)  # Save the player's score
 
-        elif choice == "3":  # Handle Tic-Tac-Toe selection
-            tic_tac_toe.launch_Tic_Tac_Toe()
-
-        elif choice == "4":
-            snake_game.launch_snake_game()  # This will now start the Snake game
-
-        elif choice == "5":
-            word_square.launch_word_square()  # Launch WordSquare game
-
         # View high scores
-        elif choice == "6":
+        elif choice == "3":
             display_high_scores(SCORES_FILE)  # Call function to display high scores
 
         # Export scores to a CSV file
-        elif choice == "7":
+        elif choice == "4":
             export_scores(SCORES_FILE)  # Call function to export scores
 
-
         # Exit the application
-        elif choice == "8":
+        elif choice == "5":
             print("Exiting... Thank you for playing!")
             break  # Exit the loop and end the program
 

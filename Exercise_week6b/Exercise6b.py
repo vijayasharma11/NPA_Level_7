@@ -1,3 +1,9 @@
+# Header Section
+# ---------------------------------------------------
+# Name: Vijaya Sharma
+# Date: 15/01/2025
+# Purpose: Debug the provided Python code to fix errors using breakpoints.
+#-----------------------------------------------------------------
 import json
 import os
 import sys
